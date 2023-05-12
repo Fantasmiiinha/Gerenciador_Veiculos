@@ -14,9 +14,18 @@ namespace GerenciadorVeiculos
 
         public bool VeiculoOficial { get; set; }
 
+        public Carro(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int portas, bool oficial) : base(id, modelo, veloAtual, peso, passageiros) 
+        {
+            QuantidadePortas = portas;
+            VeiculoOficial = oficial;
+        }
+
         public double PagarPedagio()
         {
-            return 7.00;
+            if (VeiculoOficial)
+                return 0;
+            else
+                return 7.00;
         }
 
         public string LigaLimpador()
@@ -41,5 +50,9 @@ namespace GerenciadorVeiculos
             }
         }
 
+        public override string ToString()
+        {
+            return base.ToString() + $" qtd_Portas:{QuantidadePortas}, oficial:{VeiculoOficial}";
+        }
     }
 }

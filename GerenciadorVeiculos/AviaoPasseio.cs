@@ -8,6 +8,10 @@ namespace GerenciadorVeiculos
 {
     internal class AviaoPasseio : Aviao
     {
+        public AviaoPasseio(string id, Modelo modelo, int veloAtual, int peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
+        {
+        }
+
         public bool LimpadorSwitch { get; set; }
 
         public string LigaLimpador()

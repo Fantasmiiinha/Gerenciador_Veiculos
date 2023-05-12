@@ -8,6 +8,11 @@ namespace GerenciadorVeiculos
 {
     internal class Trem : Veiculo
     {
+        public Trem(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int vagoes) : base(id, modelo, veloAtual, peso, passageiros)
+        {
+            QtdVagoes = vagoes;
+        }
+
         public int QtdVagoes { get; set; }
 
         public bool LimpadorSwitch { get; set; }

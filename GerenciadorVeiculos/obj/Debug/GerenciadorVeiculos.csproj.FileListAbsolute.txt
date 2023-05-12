@@ -1,0 +1,14 @@
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\bin\Debug\GerenciadorVeiculos.exe.config
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\bin\Debug\GerenciadorVeiculos.exe
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\bin\Debug\GerenciadorVeiculos.pdb
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\bin\Debug\Newtonsoft.Json.dll
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\bin\Debug\Newtonsoft.Json.xml
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.csproj.AssemblyReference.cache
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.csproj.SuggestedBindingRedirects.cache
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.Form1.resources
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.Properties.Resources.resources
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.csproj.GenerateResource.cache
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.csproj.CoreCompileInputs.cache
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.csproj.CopyComplete
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.exe
+D:\Erik\Materia Facul\Sem3\POO\programa-veiculos\GerenciadorVeiculos\obj\Debug\GerenciadorVeiculos.pdb

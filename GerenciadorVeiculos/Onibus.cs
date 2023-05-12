@@ -8,6 +8,11 @@ namespace GerenciadorVeiculos
 {
     internal class Onibus : Veiculo, PaganteDePedagio
     {
+        public Onibus(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int eixos, bool leito) : base(id, modelo, veloAtual, peso, passageiros)
+        {
+            QtdEixos = eixos;
+            Leito = leito;
+        }
 
         public int QtdEixos { get; set; }
         public bool Leito { get; set; }

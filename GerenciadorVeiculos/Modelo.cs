@@ -12,6 +12,13 @@ namespace GerenciadorVeiculos
         public string Descricao { get; set; }
         public Marca Marca { get; set; }
 
+        public Modelo(int cod, string desc, Marca marca) 
+        {
+            Codigo = cod;
+            Descricao = desc;
+            Marca = marca;
+        }
+
         public override string ToString()
         {
             return Descricao + Marca.ToString();

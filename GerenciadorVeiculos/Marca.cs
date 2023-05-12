@@ -11,6 +11,12 @@ namespace GerenciadorVeiculos
         public int Codigo { get; set; }
         public string Descricao { get; set; }
 
+        public Marca(int cod, string desc) 
+        {
+            Codigo = cod;
+            Descricao = desc;
+        }
+
         public override string ToString()
         {
             return Descricao;

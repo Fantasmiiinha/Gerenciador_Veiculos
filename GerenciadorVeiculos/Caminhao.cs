@@ -8,6 +8,12 @@ namespace GerenciadorVeiculos
 {
     internal class Caminhao : Veiculo, PaganteDePedagio
     {
+        public Caminhao(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int eixos, double capacidadeMax) : base(id, modelo, veloAtual, peso, passageiros)
+        {
+            QtdEixos = eixos;
+            CapacidadeMaximaDeCarga = capacidadeMax;
+        }
+
         public double PesoCarregado { get; set; }
         public int QtdEixos { get; set; }
         public double CapacidadeMaximaDeCarga { get; set; }

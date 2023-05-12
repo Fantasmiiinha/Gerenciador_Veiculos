@@ -8,6 +8,20 @@ namespace GerenciadorVeiculos
 {
     abstract class Veiculo
     {
+        private string id;
+        private Modelo modelo;
+        private int veloAtual;
+        private int passageiros;
+
+        protected Veiculo(string id, Modelo modelo, int veloAtual, int peso, int passageiros)
+        {
+            this.id = id;
+            this.modelo = modelo;
+            this.veloAtual = veloAtual;
+            Peso = peso;
+            this.passageiros = passageiros;
+        }
+
         public String Identificacao { get; set; }
 
         public Modelo ModeloVeic { get; set; }
@@ -18,20 +32,20 @@ namespace GerenciadorVeiculos
 
         public int CapacidadeDePassageiros { get; set; }
 
-        public int Acelera()
+        public string Acelera()
         {
-            return VelecidadeAtual++;
+            return $"Veiculo {Identificacao} acelerou para {++VelecidadeAtual}Km/h";
         }
 
-        public int Desacelera()
+        public string Desacelera()
         {
-            return VelecidadeAtual--;
+            return $"Veiculo {Identificacao} freiou para {--VelecidadeAtual}Km/h";
         }
 
         public override string ToString()
         {
-            return $"{Identificacao} - {ModeloVeic.ToString()}, velocidade: {VelecidadeAtual}" +
-                $"peso {Peso}, capacidade passageiros: {CapacidadeDePassageiros}";
+            return $"{Identificacao} - {ModeloVeic.ToString()}, velocidade:{VelecidadeAtual}Km/h" +
+                $"peso:{Peso}Kg, capacidade passageiros:{CapacidadeDePassageiros}";
         }
     }
 }
