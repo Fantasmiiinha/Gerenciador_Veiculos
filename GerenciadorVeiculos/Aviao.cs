@@ -8,6 +8,9 @@ namespace GerenciadorVeiculos
 {
     abstract class Aviao : Veiculo
     {
+        protected Aviao(string id, Modelo modelo, int veloAtual, int peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
+        {
+        }
 
         public string Pousar()
         {

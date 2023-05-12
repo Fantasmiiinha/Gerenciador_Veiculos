@@ -8,18 +8,14 @@ namespace GerenciadorVeiculos
 {
     abstract class Veiculo
     {
-        private string id;
-        private Modelo modelo;
-        private int veloAtual;
-        private int passageiros;
 
         protected Veiculo(string id, Modelo modelo, int veloAtual, int peso, int passageiros)
         {
-            this.id = id;
-            this.modelo = modelo;
-            this.veloAtual = veloAtual;
+            Identificacao = id;
+            ModeloVeic = modelo;
+            VelecidadeAtual = veloAtual;
             Peso = peso;
-            this.passageiros = passageiros;
+            CapacidadeDePassageiros = passageiros;
         }
 
         public String Identificacao { get; set; }
