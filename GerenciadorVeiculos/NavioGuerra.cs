@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class AviaoGuerra : Aviao
+    internal class NavioGuerra : Navio
     {
         public string Atacar()
         {
-            return $"Avião {Identificacao} atacou";
-        }
-
-        public string Ejetar()
-        {
-            return $"Avião {Identificacao} está ejetou";
+            return $"Navio {Identificacao} atacou";
         }
     }
 }
