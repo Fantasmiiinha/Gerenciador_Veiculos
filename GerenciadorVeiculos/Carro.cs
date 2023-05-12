@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Carro : Veiculo
+    internal class Carro : Veiculo, PaganteDePedagio
     {
         public int QuantidadePortas { get; set; }
 

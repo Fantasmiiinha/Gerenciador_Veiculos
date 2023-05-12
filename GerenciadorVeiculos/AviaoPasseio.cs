@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Caminhao : Veiculo, PaganteDePedagio
+    internal class AviaoPasseio : Aviao
     {
-        public double PesoCarregado { get; set; }
-        public int QtdEixos { get; set; }
-        public double CapacidadeMaximaDeCarga { get; set; }
         public bool LimpadorSwitch { get; set; }
 
         public string LigaLimpador()
@@ -33,28 +30,6 @@ namespace GerenciadorVeiculos
                 LimpadorSwitch = false;
                 return $"Desligando limpador do veículo {Identificacao}";
             }
-        }
-
-        public double PagarPedagio()
-        {
-            return 8.50 * QtdEixos;
-        }
-
-        public string Carregar(double peso)
-        {
-            if (PesoCarregado + peso > CapacidadeMaximaDeCarga)
-                throw new Exception();
-            else
-                PesoCarregado += peso;
-
-            return $"Caminhão {Identificacao} foi carregado com {peso}KG";
-        }
-
-        public string Descarregar()
-        {
-            PesoCarregado = 0;
-
-            return $"Caminhão {Identificacao} foi descarregado";
         }
     }
 }

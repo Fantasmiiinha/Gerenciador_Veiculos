@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Onibus : Veiculo
+    internal class Onibus : Veiculo, PaganteDePedagio
     {
 
         public int QtdEixos { get; set; }
