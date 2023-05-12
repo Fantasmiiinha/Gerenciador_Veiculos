@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Carro : Veiculo
+    internal class Onibus : Veiculo
     {
-        public int QuantidadePortas { get; set; }
 
+        public int QtdEixos { get; set; }
+        public bool Leito { get; set; }
         public bool LimpadorSwitch { get; set; }
-
-        public bool VeiculoOficial { get; set; }
-
-        public double PagarPedagio()
-        {
-            return 7.00;
-        }
 
         public string LigaLimpador()
         {
@@ -41,5 +35,9 @@ namespace GerenciadorVeiculos
             }
         }
 
+        public double PagarPedagio()
+        {
+            return 8.50 * QtdEixos;
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace GerenciadorVeiculos
 
         public Modelo ModeloVeic { get; set; }
 
-        public int VelecidadeAtual { get; set; }
+        public int VelecidadeAtual { get; protected set; }
 
         public double Peso { get; set; }
 
@@ -26,6 +26,12 @@ namespace GerenciadorVeiculos
         public int Desacelera()
         {
             return VelecidadeAtual--;
+        }
+
+        public override string ToString()
+        {
+            return $"{Identificacao} - {ModeloVeic.ToString()}, velocidade: {VelecidadeAtual}" +
+                $"peso {Peso}, capacidade passageiros: {CapacidadeDePassageiros}";
         }
     }
 }
