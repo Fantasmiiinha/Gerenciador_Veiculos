@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Carro : Veiculo, PaganteDePedagio
+    internal class Carro : Veiculo, IPaganteDePedagio, IAdicional
     {
         public int QuantidadePortas { get; set; }
 
@@ -14,7 +15,7 @@ namespace GerenciadorVeiculos
 
         public bool VeiculoOficial { get; set; }
 
-        public Carro(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int portas, bool oficial) : base(id, modelo, veloAtual, peso, passageiros) 
+        public Carro(string id, Modelo modelo, int veloAtual, double peso, int passageiros, int portas, bool oficial) : base(id, modelo, veloAtual, peso, passageiros) 
         {
             QuantidadePortas = portas;
             VeiculoOficial = oficial;
@@ -52,7 +53,8 @@ namespace GerenciadorVeiculos
 
         public override string ToString()
         {
-            return base.ToString() + $" qtd_Portas:{QuantidadePortas}, oficial:{VeiculoOficial}";
+            string isOficial = VeiculoOficial ? "sim" : "não";
+            return base.ToString() + $", portas:{QuantidadePortas}, oficial:{isOficial}";
         }
     }
 }

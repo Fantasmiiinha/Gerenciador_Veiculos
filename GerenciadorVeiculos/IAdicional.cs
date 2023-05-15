@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal interface PaganteDePedagio
+    internal interface IAdicional
     {
-        double PagarPedagio();
+        string LigaLimpador();
+
+        string DesligaLimpador();
     }
 }

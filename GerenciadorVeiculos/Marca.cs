@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Marca
+    public class Marca
     {
         public int Codigo { get; set; }
         public string Descricao { get; set; }

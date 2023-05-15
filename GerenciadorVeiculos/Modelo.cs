@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Modelo
+    public  class Modelo
     {
         public int Codigo { get; set; }
         public string Descricao { get; set; }
@@ -21,7 +21,7 @@ namespace GerenciadorVeiculos
 
         public override string ToString()
         {
-            return Descricao + Marca.ToString();
+            return Descricao + " - " + Marca.ToString();
         }
     }
 }

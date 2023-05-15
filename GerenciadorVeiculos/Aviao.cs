@@ -8,7 +8,7 @@ namespace GerenciadorVeiculos
 {
     abstract class Aviao : Veiculo
     {
-        protected Aviao(string id, Modelo modelo, int veloAtual, int peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
+        protected Aviao(string id, Modelo modelo, int veloAtual, double peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
         {
         }
 
@@ -24,7 +24,7 @@ namespace GerenciadorVeiculos
 
         public string Decolar()
         {
-            return $"Avião {Identificacao} Decolou";
+            return $"Avião {Identificacao} decolou";
         }
     }
 }

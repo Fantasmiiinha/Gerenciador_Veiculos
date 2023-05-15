@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class NavioGuerra : Navio
+    internal class NavioGuerra : Navio, IGuerra
     {
-        public NavioGuerra(string id, Modelo modelo, int veloAtual, int peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
+        public NavioGuerra(string id, Modelo modelo, int veloAtual, double peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
         {
         }
 

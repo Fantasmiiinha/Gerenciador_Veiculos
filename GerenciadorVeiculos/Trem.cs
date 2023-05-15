@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Trem : Veiculo
+    internal class Trem : Veiculo, IAdicional
     {
-        public Trem(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int vagoes) : base(id, modelo, veloAtual, peso, passageiros)
+        public Trem(string id, Modelo modelo, int veloAtual, double peso, int passageiros, int vagoes) : base(id, modelo, veloAtual, peso, passageiros)
         {
             QtdVagoes = vagoes;
         }
@@ -37,6 +37,11 @@ namespace GerenciadorVeiculos
                 LimpadorSwitch = false;
                 return $"Desligando limpador do veículo {Identificacao}";
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $" ,vagões:{QtdVagoes}";
         }
     }
 }

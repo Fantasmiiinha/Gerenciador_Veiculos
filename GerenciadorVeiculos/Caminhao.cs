@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Caminhao : Veiculo, PaganteDePedagio
+    internal class Caminhao : Veiculo, IPaganteDePedagio, IAdicional
     {
-        public Caminhao(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int eixos, double capacidadeMax) : base(id, modelo, veloAtual, peso, passageiros)
+        public Caminhao(string id, Modelo modelo, int veloAtual, double peso, int passageiros, int eixos, double capacidadeMax) : base(id, modelo, veloAtual, peso, passageiros)
         {
             QtdEixos = eixos;
             CapacidadeMaximaDeCarga = capacidadeMax;
         }
 
-        public double PesoCarregado { get; set; }
+        public double PesoCarregado { get; protected set; }
         public int QtdEixos { get; set; }
         public double CapacidadeMaximaDeCarga { get; set; }
         public bool LimpadorSwitch { get; set; }
+
+        private bool podeAcelerar = true;
 
         public string LigaLimpador()
         {
@@ -46,21 +48,37 @@ namespace GerenciadorVeiculos
             return 8.50 * QtdEixos;
         }
 
+        public override string Acelera()
+        {
+            if (podeAcelerar)
+                return base.Acelera();
+            else
+                return $"Caminhão {Identificacao} está sobrecarregado e não pode acelerar para tal descarregue-o";
+        }
+
         public string Carregar(double peso)
         {
-            if (PesoCarregado + peso > CapacidadeMaximaDeCarga)
-                throw new Exception();
-            else
-                PesoCarregado += peso;
+            PesoCarregado += peso;
 
-            return $"Caminhão {Identificacao} foi carregado com {peso}KG";
+            if (PesoCarregado + peso > CapacidadeMaximaDeCarga)
+            {
+                podeAcelerar = false;
+                throw new SobrePessoException();
+            }
+            
+            return $"Caminhão {Identificacao} foi carregado com {peso}KG e está com {PesoCarregado}";
         }
 
         public string Descarregar()
         {
             PesoCarregado = 0;
-
+            podeAcelerar = true;
             return $"Caminhão {Identificacao} foi descarregado";
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $", carregando:{PesoCarregado}, eixos:{QtdEixos}, Máx de carga:{CapacidadeMaximaDeCarga}";
         }
     }
 }

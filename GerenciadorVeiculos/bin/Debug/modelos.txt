@@ -1,0 +1,1 @@
+{"$type":"System.Collections.Generic.List`1[[GerenciadorVeiculos.Modelo, GerenciadorVeiculos]], mscorlib","$values":[{"$type":"GerenciadorVeiculos.Modelo, GerenciadorVeiculos","Codigo":1,"Descricao":"Corsa envenenado","Marca":{"$type":"GerenciadorVeiculos.Marca, GerenciadorVeiculos","Codigo":1,"Descricao":"Chevrolet"}}]}

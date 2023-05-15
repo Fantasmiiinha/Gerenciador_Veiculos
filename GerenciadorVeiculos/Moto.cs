@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Moto : Veiculo, PaganteDePedagio
+    internal class Moto : Veiculo, IPaganteDePedagio
     {
-        public Moto(string id, Modelo modelo, int veloAtual, int peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
+        public Moto(string id, Modelo modelo, int veloAtual, double peso, int passageiros) : base(id, modelo, veloAtual, peso, passageiros)
         {
         }
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GerenciadorVeiculos
 {
-    internal class Onibus : Veiculo, PaganteDePedagio
+    internal class Onibus : Veiculo, IPaganteDePedagio, IAdicional
     {
-        public Onibus(string id, Modelo modelo, int veloAtual, int peso, int passageiros, int eixos, bool leito) : base(id, modelo, veloAtual, peso, passageiros)
+        public Onibus(string id, Modelo modelo, int veloAtual, double peso, int passageiros, int eixos, bool leito) : base(id, modelo, veloAtual, peso, passageiros)
         {
             QtdEixos = eixos;
             Leito = leito;
@@ -43,6 +43,12 @@ namespace GerenciadorVeiculos
         public double PagarPedagio()
         {
             return 8.50 * QtdEixos;
+        }
+
+        public override string ToString()
+        {
+            string isLeito = Leito ? "sim" : "não";
+            return base.ToString() + $"eixos:{QtdEixos}, Leito:{isLeito}";
         }
     }
 }

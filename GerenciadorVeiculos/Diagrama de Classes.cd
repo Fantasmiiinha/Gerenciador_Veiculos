@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Interfaces&#xD;&#xA;">
+    <Position X="24.826" Y="6.565" Height="0.299" Width="0.952" />
+  </Comment>
+  <Class Name="GerenciadorVeiculos.Aviao" Collapsed="true">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAgAAAA=</HashCode>
+      <FileName>Aviao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.AviaoGuerra" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>AviaoGuerra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.363" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.AviaoPasseio" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>AviaoPasseio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.243" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Caminhao" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAAEAgABCoAAAAAAEAAAAAAAAAAAIBE=</HashCode>
+      <FileName>Caminhao.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.309" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Carro" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAAEAQAAAIAAAAAAAAAAAAAAgAAAABA=</HashCode>
+      <FileName>Carro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.265" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Helper" Collapsed="true">
+    <Position X="22.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAAAAAAAAAQAAEAAAAABAAAAAAAAABAABAAAAEAAA=</HashCode>
+      <FileName>Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.IdentificadorGen" Collapsed="true">
+    <Position X="14" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAEgAAA=</HashCode>
+      <FileName>IdentificadorGen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Marca" Collapsed="true">
+    <Position X="17.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Modelo" Collapsed="true">
+    <Position X="21" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Moto" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Moto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.33" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Navio" Collapsed="true">
+    <Position X="21.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Navio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.NavioGuerra" Collapsed="true">
+    <Position X="22.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>NavioGuerra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.254" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.NavioPasseio" Collapsed="true">
+    <Position X="20.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NavioPasseio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Onibus" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAAEAAAAAYAAAAAAAAAAAAAAAAAAIBA=</HashCode>
+      <FileName>Onibus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.385" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Pedagio" Collapsed="true">
+    <Position X="19.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAQAAAAAAAgAAAAAAAABAAAQQAA=</HashCode>
+      <FileName>Pedagio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Program" Collapsed="true">
+    <Position X="15.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.Trem" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAABAAEAAAAAIAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Trem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.222" />
+  </Class>
+  <Class Name="GerenciadorVeiculos.Veiculo" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAIAABAAAAEAAAAAAAABAgAAAAAAAAQAgAACAE=</HashCode>
+      <FileName>Veiculo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GerenciadorVeiculos.SobrePessoException" Collapsed="true">
+    <Position X="12.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SobrePessoException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GerenciadorVeiculos.IAdicional" Collapsed="true">
+    <Position X="24.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>IAdicional.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GerenciadorVeiculos.IGuerra" Collapsed="true">
+    <Position X="26.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>IGuerra.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GerenciadorVeiculos.IPaganteDePedagio" Collapsed="true">
+    <Position X="28.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPaganteDePedagio.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
